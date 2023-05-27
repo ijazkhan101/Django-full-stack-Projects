@@ -12,5 +12,13 @@ def home(request):
     return render(request, 'home/index.html', context={'peoples': peoples})
 
 
+def about(request):
+    return render(request, "home/about.html")
+
+
+def contact(request):
+    return render(request, "home/contact.html")
+
+
 def success_page(request):
     return HttpResponse("<h1>Hey this isc success PAge</h1>")
