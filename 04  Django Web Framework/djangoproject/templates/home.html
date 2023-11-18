@@ -1,26 +1,68 @@
 
 {% extends 'base.html' %}
 {% block content %}
-    <header>
-        <h1>Django</h1>
-        <p>Welcome to your home page!</p>
-    </header>
+  <!-- Hero Section -->
+  <section class="jumbotron text-center">
+    <div class="container">
+        <h1 class="display-4">Fresh and Delicious Fruits</h1>
+        <p class="lead">Discover the best fruits from around the world.</p>
+        <a href="#featured" class="btn btn-primary btn-lg">Explore Featured Products</a>
+    </div>
+</section>
 
-    <section>
-        <h2>About Us</h2>
-        <p>This is a brief description of your website and what it offers. You can customize this section to provide
-            information about your organization or personal interests.</p>
-    </section>
+<!-- Featured Products Section -->
+<section id="featured" class="container mt-5">
+    <h2 class="text-center mb-4">Featured Products</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="https://via.placeholder.com/300" class="card-img-top" alt="Fruit Image">
+                <div class="card-body">
+                    <h5 class="card-title">Apple</h5>
+                    <p class="card-text">Sweet and crisp apples from our orchard.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="https://via.placeholder.com/300" class="card-img-top" alt="Fruit Image">
+                <div class="card-body">
+                    <h5 class="card-title">Banana</h5>
+                    <p class="card-text">Nutrient-rich bananas for a healthy snack.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="https://via.placeholder.com/300" class="card-img-top" alt="Fruit Image">
+                <div class="card-body">
+                    <h5 class="card-title">Orange</h5>
+                    <p class="card-text">Juicy and flavorful oranges for a refreshing taste.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <section>
-        <h2>Latest News</h2>
-        <p>Share the latest updates or news related to your website or interests.</p>
-    </section>
+<!-- Contact Section -->
+<section id="contact" class="bg-light py-5">
+    <div class="container text-center">
+        <h2 class="mb-4">Contact Us</h2>
+        <p>Have questions or want to place an order? Contact us!</p>
+        <a href="#" class="btn btn-primary btn-lg">Contact Now</a>
+    </div>
+</section>
 
-    <section>
-        <h2>Contact Us</h2>
-        <p>Feel free to reach out to us at <a href="mailto:info@example.com">info@example.com</a>.</p>
-    </section>
+<!-- Bootstrap JS and jQuery (optional) -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"
+    integrity="sha384-c7JW3IqIHpP7UX/NAP+6nzfHRUWSjj1hjnOh5u5QvOB2hEP3EPIw1qOMauK2C7Sp"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 
     <footer>
         <p>&copy; 2023 Your Website Name. All rights reserved.</p>

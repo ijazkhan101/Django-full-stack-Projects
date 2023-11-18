@@ -1,0 +1,15 @@
+
+{% extends 'base.html' %}
+{% block content %}
+    <header>
+        <h1>Django</h1>
+        <p>Welcome to your Product Detail page!</p>
+    </header>
+
+   <form  method='POST' class="form-group">
+    {% csrf_token %}
+    {{ form.as_p}}
+    <input type="submit" value="Save"  />
+   </form>
+
+    {% endblock %}
