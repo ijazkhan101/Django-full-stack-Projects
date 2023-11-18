@@ -1,0 +1,26 @@
+
+{% extends 'base.html' %}
+{% block content %}
+    <header>
+        <h1>Django</h1>
+        <p>Welcome to your Product Detail page!</p>
+    </header>
+
+    <section>
+        <h2>{{ title  }}</h2>
+        <p>{{ description }}</p>
+        <p>{{ Price }}</p>
+        <p>{{ featured }}</p>
+    </section>
+
+    <section>
+        <h2>Latest News</h2>
+        <p>Share the latest updates or news related to your website or interests.</p>
+    </section>
+
+    <section>
+        <h2>Contact Us</h2>
+        <p>Feel free to reach out to us at <a href="mailto:info@example.com">info@example.com</a>.</p>
+    </section>
+
+    {% endblock %}
